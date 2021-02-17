@@ -1,0 +1,10 @@
+.sliderContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: inherit;
+}
+.starredSitesSectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
