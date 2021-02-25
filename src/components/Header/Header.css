@@ -16,14 +16,19 @@
 .navbar {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 80vw;
 }
 
 .navLink {
   text-decoration: none;
   display: flex;
   height: 2rem;
+}
+
+.navItem {
+  padding: 0 5% 0 5%;
 }

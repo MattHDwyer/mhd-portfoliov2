@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import loadingSpinner from '../../loadingGear.svg'
 import './NonStarredSites.css'
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import ReactMarkdown from 'react-markdown'
 
 const Site = () => {
 
@@ -31,42 +31,42 @@ const Site = () => {
 	// Execute the nonStarredSites function
 	nonStarredSitesFill();
 
-	const [current, setCurrent] = useState(0);
-	const length = nonStarredSites.length;
-	let timeVar = 6000;
+	// const [current, setCurrent] = useState(0);
+	// const length = nonStarredSites.length;
+	// let timeVar = 6000;
 
-	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1)
-	}
+	// const nextSlide = () => {
+	// 	setCurrent(current === length - 1 ? 0 : current + 1)
+	// }
 
-	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1)
-	}
+	// const prevSlide = () => {
+	// 	setCurrent(current === 0 ? length - 1 : current - 1)
+	// }
 
 
-	setTimeout(nextSlide, timeVar)
+	// setTimeout(nextSlide, timeVar)
 
 
 	return (
 		<div className="nonStarredSitesSectionContainer">
-			<FaArrowLeft className="leftArrow" onClick={prevSlide} />
-			<FaArrowRight className="rightArrow" onClick={nextSlide} />
-			<div className="NSsliderContainer">
-				{loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : nonStarredSites.map((siteDetail, index) => {
 
-					return (<div className={index === current ? 'slide active' : 'slide'} id={siteDetail.id} key={index}>
-						{index === current && (
-							<div className="slideInfo">
-								<a href={siteDetail.url} target="_blank" rel="noreferrer"><h3>{siteDetail.name}</h3></a>
-								<br />
-								<img className="screenshotPreview" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
-							</div>
+			{loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : nonStarredSites.map((siteDetail, index) => {
 
-						)}
-					</div>)
+				return (<div className="nonStarredSiteItem" id={siteDetail.id} key={index}>
 
-				})}
-			</div>
+					<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
+					<div className="onHoverInfo">
+						<h3>{siteDetail.name}</h3>
+						<div className="nonStarredFeatures">
+							{siteDetail.features !== null && <ReactMarkdown>{siteDetail.features}</ReactMarkdown>}
+						</div>
+
+					</div>
+
+
+				</div>)
+
+			})}
 		</div>
 	);
 };
