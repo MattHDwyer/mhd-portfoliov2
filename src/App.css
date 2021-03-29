@@ -13,6 +13,7 @@ body {
   margin: auto;
   padding: 0;
   background: rgb(194, 223, 227);
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 a {
@@ -60,7 +61,33 @@ h4,
 h5,
 h6 {
   color: rgba(92, 107, 115, 1);
-  padding: 0;
+  padding: 5px 0;
   margin: 0;
   text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 16px;
 }

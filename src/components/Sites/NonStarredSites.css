@@ -1,68 +1,258 @@
-.nonStarredSitesSectionContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
+/* Large Desktop View: */
+@media only screen and (min-width: 1401px) {
+  .nonStarredSitesSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .nonStarredSiteItem {
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+  }
+
+  .nonStarredScreenshot {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    position: relative;
+  }
+  .nonStarredScreenshot:hover {
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .onHoverInfo {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    z-index: 20;
+    display: inline-block;
+    text-align: center;
+    transition: 0.6s linear;
+    opacity: 0;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 0px 78px 52px 26px/26px 52px 78px 0px;
+  }
+
+  .nonStarredScreenshot:hover ~ .onHoverInfo {
+    color: black;
+    background: white;
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(0%);
+    opacity: 0.95;
+  }
+  .onHoverInfo:hover {
+    background: white;
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .onHoverInfo:hover ~ .nonStarredScreenshot {
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .lastColumn > .nonStarredScreenshot:hover ~ .onHoverInfo {
+    transform: translate(-200%);
+  }
+
+  .lastColumn > .onHoverInfo:hover {
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+
+  .lastColumn > .onHoverInfo {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    z-index: 20;
+    display: inline-block;
+    text-align: center;
+    transition: 0.6s linear;
+    opacity: 0;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 78px 0px 26px 52px/52px 26px 0px 78px;
+  }
+
+  .nonStarredFeatures {
+    width: 100%;
+    height: fit-content;
+  }
+  .ReactModal__Content {
+    inset: 30% !important;
+  }
 }
 
-.nonStarredSiteItem {
-  height: 100%;
-  position: relative;
-}
-.nonStarredSiteItem:hover {
-  height: 0;
+/* Large Desktop View: */
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+  .nonStarredSitesSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .nonStarredSiteItem {
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+  }
+
+  .nonStarredScreenshot {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    position: relative;
+  }
+  .nonStarredScreenshot:hover {
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .onHoverInfo {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    z-index: 20;
+    display: inline-block;
+    text-align: center;
+    transition: 0.6s linear;
+    opacity: 0;
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .nonStarredScreenshot:hover ~ .onHoverInfo {
+    color: black;
+    background: white;
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .onHoverInfo:hover {
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .onHoverInfo:hover ~ .nonStarredScreenshot {
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .lastColumn > .nonStarredScreenshot:hover ~ .onHoverInfo {
+    transform: translate(-200%);
+  }
+
+  .lastColumn > .onHoverInfo:hover {
+    visibility: visible;
+    transition: 0.6s ease-in;
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+
+  .lastColumn > .onHoverInfo {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    z-index: 20;
+    display: inline-block;
+    text-align: center;
+    transition: 0.6s linear;
+    opacity: 0;
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .nonStarredFeatures {
+    width: 100%;
+    height: 70%;
+  }
+  .ReactModal__Content {
+    inset: 30% !important;
+  }
 }
 
-.nonStarredScreenshot {
-  width: 100%;
-  height: auto;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 10;
-  position: relative;
+/* Tablet View: */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  .nonStarredSitesSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .nonStarredSiteItem {
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+  }
+
+  .nonStarredScreenshot {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .ReactModal__Content {
+    inset: 30% !important;
+  }
 }
-.nonStarredScreenshot:hover {
-  cursor: pointer;
+/* Mobile View */
+@media only screen and (max-width: 400px) {
+  .nonStarredSitesSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .nonStarredSiteItem {
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+  }
+
+  .nonStarredScreenshot {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    position: relative;
+  }
+  .ReactModal__Content {
+    inset: 30% 5% !important;
+  }
+}
+
+.ReactModal__Overlay {
   z-index: 100;
 }
 
-.onHoverInfo {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  visibility: hidden;
-  transform: translateX(-100%);
-  margin: auto;
-  z-index: 20;
+.slideOutTitle {
+  height: fit-content;
+  padding: 15px;
 }
 
-.nonStarredScreenshot:hover ~ .onHoverInfo {
-  color: white;
-  background: black;
-  visibility: visible;
-  transition: 1s ease-in-out;
+.modalContainer {
   display: flex;
-  transform: translateX(0%);
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-.onHoverInfo:hover {
-  color: white;
-  background: black;
-  visibility: visible;
-  transition: 1s ease-in-out;
-  display: flex;
-  transform: translateX(0%);
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  z-index: 3;
-}
-
-.onHoverInfo:hover ~ .nonStarredScreenshot {
-  z-index: 100;
-  cursor: pointer;
+  justify-content: center;
 }

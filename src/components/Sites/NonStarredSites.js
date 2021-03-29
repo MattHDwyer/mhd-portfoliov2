@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useEffect, useState } from 'react';
 import axios from 'axios';
 import loadingSpinner from '../../loadingGear.svg'
 import './NonStarredSites.css'
-import ReactMarkdown from 'react-markdown'
+import Modal from 'react-modal';
 
 const Site = () => {
 
@@ -31,20 +31,63 @@ const Site = () => {
 	// Execute the nonStarredSites function
 	nonStarredSitesFill();
 
-	// const [current, setCurrent] = useState(0);
-	// const length = nonStarredSites.length;
-	// let timeVar = 6000;
+	function useWindowSize() {
+		const [size, setSize] = useState([0, 0]);
+		useLayoutEffect(() => {
+			function updateSize() {
+				setSize([window.innerWidth, window.innerHeight]);
+			}
+			window.addEventListener('resize', updateSize);
+			updateSize();
+			return () => window.removeEventListener('resize', updateSize);
+		}, []);
+		return size;
+	}
 
-	// const nextSlide = () => {
-	// 	setCurrent(current === length - 1 ? 0 : current + 1)
+	// function ShowWindowDimensions() {
+	// 	const [width, height] = useWindowSize();
+	// 	return <span>Window size: {width} x {height}</span>;
 	// }
 
-	// const prevSlide = () => {
-	// 	setCurrent(current === 0 ? length - 1 : current - 1)
-	// }
+
+	let screenWidth = 4;
+	let maxLength = 150;
+
+	const SetScreenWidth = (props) => {
+		const [width] = useWindowSize();
+		if (width >= 0 && width <= 400) {
+			screenWidth = 1;
+			maxLength = 400;
+
+		} else if (width >= 401 && width <= 900) {
+			screenWidth = 2;
+			maxLength = 150;
+
+		} else if (width >= 901 && width <= 1100) {
+			screenWidth = 3;
+			maxLength = 50;
+
+		} else if (width >= 1101 && width <= 1400) {
+			screenWidth = 3;
+			maxLength = 150;
+
+		} else if (width > 1400) {
+			screenWidth = 4;
+			maxLength = 250;
+		}
+	}
+	SetScreenWidth();
 
 
-	// setTimeout(nextSlide, timeVar)
+	const [modalIsOpen, setIsOpen] = useState(-10);
+
+	const getModal = (index) => {
+		setIsOpen(index);
+	}
+
+	const closeModal = () => {
+		setIsOpen(-10);
+	}
 
 
 	return (
@@ -53,20 +96,76 @@ const Site = () => {
 			{loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : nonStarredSites.map((siteDetail, index) => {
 
 				return (<div className="nonStarredSiteItem" id={siteDetail.id} key={index}>
+					{((index + 1) / screenWidth) % 1 === 0 ?
+						<div className="lastColumn">
+							<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
+							<div className="onHoverInfo">
+								<h3 className="slideOutTitle">{siteDetail.name}</h3>
+								<div className="nonStarredFeatures">
+									{siteDetail.features !== null &&
+										<>
+											{siteDetail.features.length > maxLength ?
+												<>
+													<p>{`${siteDetail.features.substring(0, maxLength)}...`}<br /> <button onClick={() => { getModal(index) }}>Read more</button></p>
+													<Modal
+														isOpen={modalIsOpen === index}
+														onRequestClose={closeModal}
+														ariaHideApp={false}
+													>
+														<h3>{siteDetail.name} </h3>
+														<p>{siteDetail.features}</p>
+														<button className="modalClose" onClick={() => { closeModal() }}>Close</button>
+													</Modal>
+												</>
+												:
+												<p>{siteDetail.features}</p>}
+										</>
+									}
+								</div>
 
-					<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
-					<div className="onHoverInfo">
-						<h3>{siteDetail.name}</h3>
-						<div className="nonStarredFeatures">
-							{siteDetail.features !== null && <ReactMarkdown>{siteDetail.features}</ReactMarkdown>}
+							</div>
 						</div>
+						:
+						<>
+							<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
+							<div className="onHoverInfo">
+								<h3 className="slideOutTitle">{siteDetail.name}</h3>
+								<div className="nonStarredFeatures">
+									{siteDetail.features !== null &&
+										<>
+											{siteDetail.features.length > maxLength ?
+												<>
+													<p>{`${siteDetail.features.substring(0, maxLength)}...`} <br /><button onClick={() => { getModal(index) }}>Read more</button></p>
+													<Modal
+														isOpen={modalIsOpen === index}
+														onRequestClose={closeModal}
+														ariaHideApp={false}
+													>
+														<div className="modalContainer">
+															<h3>{siteDetail.name} </h3>
+															<br />
+															<p>{siteDetail.features}</p>
+															<br />
+															<button className="modalClose" onClick={() => { closeModal() }}>Close</button>
+														</div>
+													</Modal>
+												</>
+												:
+												<p>{siteDetail.features}</p>}
+										</>
+									}
+								</div>
 
-					</div>
+							</div>
+
+						</>
+					}
 
 
 				</div>)
 
 			})}
+
 		</div>
 	);
 };

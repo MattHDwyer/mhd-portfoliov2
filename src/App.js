@@ -9,10 +9,9 @@ import Contact from './components/Contact/Contact';
 import StaticBackground from './components/Background/StaticBackground'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
 function App() {
 	return (
-		<div className="App">
+		<div className="App" id="App">
 			<Header />
 			<StaticBackground />
 			<main>
