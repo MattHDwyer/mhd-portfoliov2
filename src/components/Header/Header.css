@@ -1,10 +1,9 @@
 .headerContainer {
-  height: 10vh;
-  width: 100vw;
+  width: 10vh;
+  height: 100vh;
   position: fixed;
   background-color: rgba(157, 180, 192);
   margin: auto;
-  transform: translateY(-10vh);
 }
 
 .headerItem {
@@ -19,16 +18,25 @@
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80vw;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navContainer {
+  height: 100%;
 }
 
 .navLink {
   text-decoration: none;
   display: flex;
   height: 2rem;
+  align-items: center;
 }
 
 .navItem {
-  padding: 0 5% 0 5%;
+  width: 100%;
+}
+
+.navItem:last-child {
+  margin-top: auto;
 }
