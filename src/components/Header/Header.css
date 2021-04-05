@@ -1,9 +1,8 @@
 .headerContainer {
-  width: 10vh;
-  height: 100vh;
   position: fixed;
-  background-color: rgba(157, 180, 192);
-  margin: auto;
+  background-color: #10002b;
+  transition: 200ms ease;
+  z-index: 100000;
 }
 
 .headerItem {
@@ -29,8 +28,32 @@
 .navLink {
   text-decoration: none;
   display: flex;
-  height: 2rem;
   align-items: center;
+  height: 10vh;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+
+.navLinkActive {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  transition: 600ms;
+}
+
+.navLinkLogo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+
+.navLink:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #1b1d1f;
 }
 
 .navItem {
@@ -39,4 +62,207 @@
 
 .navItem:last-child {
   margin-top: auto;
+}
+
+.linkText {
+  display: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.iconPortfolio {
+  transform: rotate(0deg);
+  transition: transform 3000ms;
+  transform-origin: center;
+}
+
+.navIcon {
+  transition: 600ms;
+}
+
+.navLink:hover > .iconShopify {
+  color: #96bf48;
+}
+
+.navLinkActive .iconShopify {
+  color: #96bf48;
+}
+
+.navLink:hover > .iconPortfolio {
+  color: yellow;
+  transform: rotate(-180deg);
+}
+
+.navLinkActive .iconPortfolio {
+  color: yellow;
+}
+
+.navLink:hover > .iconSkills {
+  color: #d67ab1;
+}
+
+.navLinkActive .iconSkills {
+  color: #d67ab1;
+}
+
+.navLink:hover > .iconAbout {
+  color: lightcoral;
+}
+
+.navLinkActive .iconAbout {
+  color: lightcoral;
+}
+
+.navLink:hover > .iconContact {
+  color: white;
+}
+
+.navLinkActive .iconContact {
+  color: white;
+}
+
+.navLink:hover > .iconHome {
+  color: coral;
+}
+
+.navLinkActive .iconHome {
+  color: coral;
+}
+
+.navLinkLogo {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: coral;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iconLogo {
+  transform: rotate(0deg);
+  transition: transform 600ms;
+  display: block;
+}
+
+.headerContainer:hover .iconLogo {
+  transform: rotate(-180deg);
+  filter: grayscale(0%) opacity(1);
+}
+
+.logoText {
+  display: none;
+  transition: width 600ms ease;
+  left: -999px;
+  transition: 600ms ease-in;
+}
+
+.headerContainer:hover .logoText {
+  display: inline;
+  left: -999px;
+  min-width: 165px;
+  transition: 600ms ease-in;
+}
+
+.fa-primary {
+  color: #ff7eee !important;
+}
+
+.fa-secondary {
+  color: #df49a6 !important;
+}
+
+.headerContainer:hover .navLinkLogo {
+  filter: grayscale(0%) opacity(1);
+  transition: 600ms;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+  .headerContainer {
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navLink {
+    justify-content: center;
+  }
+
+  .navLinkActive {
+    justify-content: center;
+  }
+
+  .navIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .navItem:first-child {
+    display: none;
+  }
+
+  .navLinkLogo {
+    display: none;
+  }
+  .iconShopify:active {
+    color: #96bf48;
+  }
+
+  .iconPortfolio:active {
+    color: yellow;
+  }
+
+  .iconSkills:active {
+    color: #d67ab1;
+  }
+
+  .iconAbout:active {
+    color: lightcoral;
+  }
+
+  .iconContact:active {
+    color: white;
+  }
+
+  .iconHome:active {
+    color: coral;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 600px) {
+  .headerContainer {
+    width: 7rem;
+    height: 100vh;
+  }
+
+  .headerContainer:hover .logoText {
+    margin-left: 1rem;
+    left: 0px;
+  }
+
+  .headerContainer:hover {
+    width: 16rem;
+  }
+
+  .headerContainer:hover .linkText {
+    display: block;
+    min-width: 165px;
+  }
+
+  .navIcon {
+    width: 5rem;
+    height: 3rem;
+    min-width: 5rem;
+    margin: 0 1rem;
+  }
+  .navLinkLogo svg {
+    width: 5rem;
+    height: 4rem;
+    margin: 0 auto;
+  }
 }

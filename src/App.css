@@ -1,14 +1,14 @@
 :root {
   font-size: 16px;
   font-family: "Open Sans";
-  --text-primary: #ff0000;
+  --text-primary: coral;
   --text-secondary: #aaffbb;
   --bg-primary: #fa00bc;
   --bg-secondary: #6532ab;
 }
 
 body {
-  color: black;
+  color: white;
   background-color: white;
   margin: auto;
   padding: 0;
@@ -24,7 +24,6 @@ a {
 main {
   width: 80vw;
   margin: auto;
-  margin-left: 10vh;
   padding: 1rem;
 }
 
@@ -90,4 +89,16 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-bottom: 10vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin: 0 7rem 0 7rem;
+  }
 }

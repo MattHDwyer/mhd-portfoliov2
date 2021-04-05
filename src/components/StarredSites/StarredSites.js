@@ -31,12 +31,10 @@ const StarredSite = () => {
 
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1)
-		setInterval(nextSlide, timeVar)
 	}
 
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1)
-		setInterval(nextSlide, timeVar)
 	}
 	setInterval(nextSlide, timeVar)
 	return (
