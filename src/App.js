@@ -6,7 +6,8 @@ import Index from './components/Index/Index';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
-import StaticBackground from './components/Background/StaticBackground'
+import Portfolio from './components/Portfolio/Portfolio';
+import StaticBackground from './components/Background/StaticBackground';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 						<Route path="/shopify-portfolio" exact component={ShopifySites} />
 						<Route path="/skills" exact component={Skills} />
 						<Route path="/contact" exact component={Contact} />
+						<Route path="/portfolio" exact component={Portfolio} />
 					</Switch>
 				</Router>
 				<Footer />

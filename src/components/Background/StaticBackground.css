@@ -1,9 +1,8 @@
 .StaticBackground {
-  background-color: white;
+  background-color: #240046;
   color: #fff;
   width: 100vw;
-  height: 90vh;
-  border-radius: 10px;
+  height: 100vh;
   display: block;
   text-align: center;
   line-height: 40px;
@@ -14,14 +13,14 @@
 .StaticBackground:after {
   content: "";
   position: absolute;
-  background-color: #dee2e6;
+  background-color: #3c096c;
   width: 1070vw;
   height: 500vh;
   border-radius: 75%;
   top: 0;
   left: 0;
   transform: translate(-62%, 4%);
-  box-shadow: rgba(187, 187, 187, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(16, 0, 43) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
   z-index: -20;
 }
