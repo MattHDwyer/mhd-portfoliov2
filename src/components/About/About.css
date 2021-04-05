@@ -1,0 +1,12 @@
+.aboutTextLeft {
+    text-align: left;
+    width: 30vw;
+    display: flex;
+
+}
+
+.aboutTextRight {
+    text-align: right;
+    width: 30vw;
+    display: flex;
+}
