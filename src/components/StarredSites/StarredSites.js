@@ -38,29 +38,8 @@ const StarredSite = () => {
 	// }
 	// setInterval(nextSlide, timeVar)
 	return (
-		// <div className="starredSitesSectionContainer">
-		// 	<div className="sliderContainer">
-		// 		<FaArrowLeft className="leftArrow" /*onClick={prevSlide}*/ />
-
-		// 		{/*loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : StarredSites.map((siteDetail, index) => {
-
-		// 			return (<div className={index === current ? 'slide active' : 'slide'} id={siteDetail.id} key={index}>
-		// 				{index === current && (
-		// 					<div className="slideInfo">
-		// 						<a href={siteDetail.url} target="_blank" rel="noreferrer"><h3>{siteDetail.name}</h3></a>
-		// 						<br />
-		// 						<div className="screenshotContainer">
-		// 							<img className="screenshotPreview" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
-		// 						</div>
-		// 					</div>
-
-		// 				)}
-		// 			</div>)
-
-		// 				})*/}
-		// 		<FaArrowRight className="rightArrow" /*onClick={nextSlide}*/ />
-		// 	</div>
-		// </div >
+		<>
+		</>
 	);
 };
 
