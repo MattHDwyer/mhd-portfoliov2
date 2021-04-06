@@ -15,6 +15,7 @@ function App() {
 		<div className="App" id="App">
 			<Header />
 			<StaticBackground />
+			<h1>SITE IS CURRENTLY UNDER DEVELOPMENT</h1>
 			<main>
 				<Router>
 					<Switch>
