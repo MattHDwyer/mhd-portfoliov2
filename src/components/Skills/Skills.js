@@ -85,7 +85,7 @@ function Skills() {
 
 	return (
 		<div className="skillsContainer">
-			<h1>Matthew Dwyer Skills</h1>
+			<h1>My Skills</h1>
 			<div className="skillsDescription">
 				<p>
 					Below is a collection of my ever growing skills, to find out more where I developed or deploy these skills click on the icon!
