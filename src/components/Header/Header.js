@@ -14,7 +14,7 @@ const Header = () => {
 			<nav className="navContainer">
 				<ul className="navbar">
 					<li className="navItem">
-						<a className="navLinkLogo" href="#">
+						<a className="navLinkLogo" href="#top">
 							<span className="logoText">Matt Dwyer<br />  <small>Web Developer</small></span>
 							<svg
 								aria-hidden="true"
