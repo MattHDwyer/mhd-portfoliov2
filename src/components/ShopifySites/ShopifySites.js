@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React/*, { useState, useEffect } */ from 'react';
 import StarredSites from '../StarredSites/StarredSites';
 import NonStarredSites from '../Sites/NonStarredSites';
-import axios from 'axios';
 
 const ShopifySites = () => {
 
