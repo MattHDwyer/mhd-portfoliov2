@@ -4,24 +4,25 @@ import { DiPhotoshop, DiMysql, DiMongodb } from "react-icons/di";
 import { GiTalk } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import Modal from 'react-modal';
+import './Skills.css';
 
 function Skills() {
 
 	const skillsArr = [
 		{
-			name: "HTML",
+			name: "HTML 5",
 			icon: <FaHtml5 />,
 			description: "I work with HTML, CSS, Javascript and Liquid on a daily basis in my role as Tower's Shopify Developer."
 		},
 		{
-			name: "CSS",
+			name: "CSS 3",
 			icon: <FaCss3Alt />,
 			description: "I work with HTML, CSS, Javascript and Liquid on a daily basis in my role as Tower's Shopify Developer. I'm continously learning new skills and tricks while styling with CSS and Javascript"
 		},
 		{
 			name: "Shopify",
 			icon: <FaShopify />,
-			description: "I'm no stranger to Liquid or the Shopify interface. Everyday I'm involved with helping someone set up their Shopify Admin Panel or making changes to their template to suit their requests. By the end of 2021 I also aspire to have built my own Shopify template from scratch."
+			description: "I'm no stranger to Liquid or the Shopify interface. Everyday I'm involved with helping someone set up their Shopify Admin Panel or making changes to their template to suit their requests."
 		},
 		{
 			name: "Javascript",
@@ -31,7 +32,7 @@ function Skills() {
 		{
 			name: "Communicating with Clients",
 			icon: <GiTalk />,
-			description: "On a daily basis I communicate with clients to discuss with them UI and UX design of their selected Shopify template. I also write documentation and teach clients how to use their new Shopify site."
+			description: "On a daily basis I communicate with clients to discuss with them UI and UX design of their selected Shopify template. I also write documentation and provide training session for clients on how they can fully utilise their new Shopify site."
 		},
 		{
 			name: "React",
@@ -78,40 +79,45 @@ function Skills() {
 	const [modalIsOpen, setIsOpen] = useState(false);
 	const [currentSkill, setCurrentSkill] = useState(skillsArr[0]);
 
-	// const openModal = (skill) => {
-	// 	setIsOpen(true);
-	// 	setCurrentSkill(skill);
-	// }
-
 	const closeModal = () => {
 		setIsOpen(false);
 	}
 
 	return (
-		<div>
+		<div className="skillsContainer">
 			<h1>Matthew Dwyer Skills</h1>
-			<p>
-				Below is a collection of my ever growing skills, to find out more where I developed or deployed these skills click on the icon!
-			</p>
-			<IconContext.Provider value={{ style: { verticalAlign: 'middle', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'auto', fontSize: '5rem' } }}>
+			<div className="skillsDescription">
+				<p>
+					Below is a collection of my ever growing skills, to find out more where I developed or deploy these skills click on the icon!
+				</p>
+			</div>
+			<div className="skillsGridContainer">
+
 				{skillsArr.map((skill, index) => {
 					return (
-						<div className="skillsContainer" key={index}>
-							<p>{skill.name}</p>
-							<button style={{ display: "flex", margin: "auto" }} onClick={() => { setIsOpen(true); setCurrentSkill(skill); }}>{skill.icon}</button>
-						</div>
+						<IconContext.Provider value={{ className: `skillIcon skill${skill.name.replace(/\s/g, '')}` }}>
+							<div className="skillContainer" key={index}>
+								<button className="skillButton" onClick={() => { setIsOpen(true); setCurrentSkill(skill); }}>
+									<h4>{skill.name}</h4>
+									{skill.icon}
+								</button>
+							</div>
+						</IconContext.Provider>
+
 					)
 				})}
 				<Modal
 					isOpen={modalIsOpen}
 					onRequestClose={closeModal}
 				>
-					<p>{currentSkill.name}</p>
-					{currentSkill.icon}
-					<p>{currentSkill.description}</p>
+					<h3>{currentSkill.name}</h3>
+					<p className="modalDescriptionText"> {currentSkill.description}</p>
+					<IconContext.Provider value={{ className: `skillIcon skill${currentSkill.name.replace(/\s/g, '')}` }}>
+						{currentSkill.icon}
+					</IconContext.Provider>
 				</Modal>
-			</IconContext.Provider>
-		</div>
+			</div>
+		</div >
 	)
 }
 

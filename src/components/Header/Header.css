@@ -158,9 +158,9 @@
 }
 
 .headerContainer:hover .logoText {
-  display: inline;
+  display: block;
   left: -999px;
-  min-width: 165px;
+  min-width: 180px;
   transition: 600ms ease-in;
 }
 

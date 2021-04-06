@@ -1,12 +1,20 @@
-.aboutTextLeft {
-    text-align: left;
-    width: 30vw;
-    display: flex;
+.aboutContainer {
+  margin-bottom: 75px;
+}
 
+.aboutTextLeft {
+  display: grid;
+  grid-template-columns: 65% 35%;
 }
 
 .aboutTextRight {
-    text-align: right;
-    width: 30vw;
-    display: flex;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.aboutSeperator {
+  display: block;
+  margin-top: 75px;
+  line-height: 22px;
+  content: "";
 }

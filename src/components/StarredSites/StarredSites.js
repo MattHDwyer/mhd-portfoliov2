@@ -25,23 +25,24 @@ const StarredSite = () => {
 	}
 	StarredSitesFill();
 
-	const [current, setCurrent] = useState(0);
-	const length = StarredSites.length;
-	const timeVar = 6000;
+	// const [current, setCurrent] = useState(0);
+	// const length = StarredSites.length;
+	// const timeVar = 6000;
 
-	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1)
-	}
+	// const nextSlide = () => {
+	// 	setCurrent(current === length - 1 ? 0 : current + 1)
+	// }
 
-	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1)
-	}
-	setInterval(nextSlide, timeVar)
+	// const prevSlide = () => {
+	// 	setCurrent(current === 0 ? length - 1 : current - 1)
+	// }
+	// setInterval(nextSlide, timeVar)
 	return (
 		<div className="starredSitesSectionContainer">
 			<div className="sliderContainer">
-				<FaArrowLeft className="leftArrow" onClick={prevSlide} />
-				{loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : StarredSites.map((siteDetail, index) => {
+				<FaArrowLeft className="leftArrow" /*onClick={prevSlide}*/ />
+
+				{/*loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : StarredSites.map((siteDetail, index) => {
 
 					return (<div className={index === current ? 'slide active' : 'slide'} id={siteDetail.id} key={index}>
 						{index === current && (
@@ -56,8 +57,8 @@ const StarredSite = () => {
 						)}
 					</div>)
 
-				})}
-				<FaArrowRight className="rightArrow" onClick={nextSlide} />
+						})*/}
+				<FaArrowRight className="rightArrow" /*onClick={nextSlide}*/ />
 			</div>
 		</div >
 	);
