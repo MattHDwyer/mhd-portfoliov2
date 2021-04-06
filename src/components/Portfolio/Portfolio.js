@@ -4,7 +4,7 @@ import './Portfolio.css'
 const Portfolio = () => {
 	return (
 		<div>
-			YEET
+			<h2>UNDER DEVELOPMENT... COMING SOON!</h2>
 		</div>
 	)
 }
