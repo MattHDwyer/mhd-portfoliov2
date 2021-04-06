@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import loadingSpinner from '../../loadingGear.svg'
+import React/*, { useEffect, useState } */ from 'react';
 import './StarredSites.css'
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+// import loadingSpinner from '../../loadingGear.svg'
+// import axios from 'axios';
+// import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const StarredSite = () => {
 

@@ -26,6 +26,7 @@ const Site = () => {
 			if (siteDetail.starred !== true && siteDetail.screenshotUrl !== "") {
 				return nonStarredSites.push(siteDetail)
 			}
+			return null;
 		})
 	}
 	// Execute the nonStarredSites function
