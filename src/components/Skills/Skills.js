@@ -30,11 +30,6 @@ function Skills() {
 			description: "While I don't code in JS as much as I do HTML, CSS or Liquid I still have a solid knowledge base and enjoy learning more and more about the best ways to enhance a website with JS."
 		},
 		{
-			name: "Communicating with Clients",
-			icon: <GiTalk />,
-			description: "On a daily basis I communicate with clients to discuss with them UI and UX design of their selected Shopify template. I also write documentation and provide training session for clients on how they can fully utilise their new Shopify site."
-		},
-		{
 			name: "React",
 			icon: <FaReact />,
 			description: "I have a stable understanding of React and have coded a few projects (including this portfolio site), which you can see on my Portfolio page."
@@ -57,17 +52,22 @@ function Skills() {
 		{
 			name: "Git",
 			icon: <FaGit />,
-			description: "I use Github for version control for all of my projects."
+			description: "I use Github for version control for all of my projects. It's also used to backup the template code from all of the Shopify sites that I create and make changes to."
 		},
 		{
 			name: "Node JS",
 			icon: <FaNodeJs />,
-			description: "I have a basic understanding of Node JS. This language is the first started to learn on and will be used for a massive project I have planned in June 2021."
+			description: "I have a basic understanding of Node JS. This language is the first started to learn on and will be used for in my future projects in 2021."
 		},
 		{
 			name: "Photoshop",
 			icon: <DiPhotoshop />,
-			description: "I use Photoshop sporadically and have a strong knowledge on the basic features it provides. I use it to help optimise clients images they provide me for their Shopify site."
+			description: "I use Photoshop sporadically and have a strong knowledge on the basic features it provides. I use it to help create and optimise clients images they provide me for their Shopify site."
+		},
+		{
+			name: "Communicating with Clients",
+			icon: <GiTalk />,
+			description: "On a daily basis I communicate with clients to discuss with them UI and UX design of their selected Shopify template. I also write documentation and provide training session for clients on how they can fully utilise their new Shopify site."
 		},
 		{
 			name: "MongoDB",
@@ -88,7 +88,7 @@ function Skills() {
 			<h1>My Skills</h1>
 			<div className="skillsDescription">
 				<p>
-					Below is a collection of my ever growing skills, to find out more where I developed or deploy these skills click on the icon!
+					Below is a list of my ever growing skills, to find out more where I developed or deploy these skills click on the icon!
 				</p>
 			</div>
 			<div className="skillsGridContainer">
