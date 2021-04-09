@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { FaShopify, FaBrain, FaBookReader, FaEnvelope, FaHome, FaLinkedin } from "react-icons/fa";
+import { FaShopify, FaBrain, FaBookReader, FaEnvelope, /*FaHome,*/ FaLinkedin } from "react-icons/fa";
 import { GoGear } from 'react-icons/go';
 import { IconContext } from "react-icons";
 
@@ -77,7 +77,7 @@ const Header = () => {
 					</IconContext.Provider>
 					<IconContext.Provider value={{ className: "navIcon iconLinkedIn" }}>
 						<li className="navItem">
-							<a className={path === "/" ? "navLinkActive" : "navLink"} href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" target="_blank">
+							<a className={path === "/" ? "navLinkActive" : "navLink"} href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" rel="noreferrer" target="_blank">
 								<FaLinkedin /><span className="linkText">LinkedIn</span>
 							</a>
 						</li>

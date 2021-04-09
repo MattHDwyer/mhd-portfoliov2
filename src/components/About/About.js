@@ -12,7 +12,7 @@ const About = () => {
 						<p>I'm a young and passionate web designer and developer currently working for <a href="https://towersystems.com.au" target="_blank" rel="noreferrer">Tower Systems!</a> I've been working at Tower since February 2020, my role invovles developing Shopify sites for our clients and integrating Tower's Point of Sale (POS) software. I've developed and help manage over 60+ webstores, with many more to come on their 2021. To view some of my work checkout my <a href="/shopify-portfolio">Shopify Portfolio Page!</a></p>
 						<br />
 						<div className="centerButton">
-							<a className="aboutLinkButton" href={resume} target="_blank"><strong>View My Resume</strong></a>
+							<a className="aboutLinkButton" href={resume} target="_blank" rel="noreferrer"><strong>View My Resume</strong></a>
 						</div>
 					</div>
 				</div>
