@@ -54,12 +54,12 @@
 }
 
 .contactButton {
-  width: 10%;
-  height: 2rem;
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   border-radius: 0.5rem;
   border: none;
   background-color: #240046;
   color: coral;
+  width: fit-content;
+  padding: 0.5rem 2rem;
 }

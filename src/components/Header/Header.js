@@ -77,7 +77,7 @@ const Header = () => {
 					</IconContext.Provider>
 					<IconContext.Provider value={{ className: "navIcon iconLinkedIn" }}>
 						<li className="navItem">
-							<a className={path === "/" ? "navLinkActive" : "navLink"} href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" rel="noreferrer" target="_blank">
+							<a className="navLink" href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" rel="noreferrer" target="_blank">
 								<FaLinkedin /><span className="linkText">LinkedIn</span>
 							</a>
 						</li>

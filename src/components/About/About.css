@@ -5,14 +5,16 @@
   border-radius: 25px;
 }
 
-.aboutTextLeft {
-  display: grid;
-  grid-template-columns: 65% 35%;
-}
+@media screen and (min-width: 600px) {
+  .aboutTextLeft {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
 
-.aboutTextRight {
-  display: grid;
-  grid-template-columns: 35% 65%;
+  .aboutTextRight {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
 }
 
 .aboutSeperator {

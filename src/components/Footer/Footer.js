@@ -1,9 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
 	return (
-		<footer className="">
-			<h4>Thanks for coming to my Ted Talk</h4>
+		<footer >
+			<small className="footerText">Designed and developed by Matt Dwyer</small>
 		</footer>
 	);
 };
