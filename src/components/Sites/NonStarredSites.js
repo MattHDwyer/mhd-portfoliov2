@@ -1,32 +1,31 @@
-import React, { useLayoutEffect, useEffect, useState } from 'react';
-import axios from 'axios';
-import loadingSpinner from '../../loadingGear.svg'
+import React, { useLayoutEffect, useState } from 'react';
 import './NonStarredSites.css'
 import Modal from 'react-modal';
+import sitesData from '../../data/shopifySites.json';
 
 const Site = () => {
 
 	// Set Loading State
-	const [loading, setLoading] = useState(true);
-	// Set sites state
-	const [sites, setSites] = useState([]);
+	// const [loading, setLoading] = useState(false);
+	// // Set sites state
+	// const [sites, setSites] = useState([]);
 
-	// GET request to retrieve list of Shopify sites from PHP backend
-	useEffect(() => {
-		axios.get('http://localhost:8888/php-mhd-portfolio/api/website/read.php')
-			.then(res => setSites(res.data.sites))
-			.finally(() => setLoading(false))
-	}, []);
+	// // GET request to retrieve list of Shopify sites from PHP backend
+	// useEffect(() => {
+	// 	axios.get('http://localhost:8888/php-mhd-portfolio/api/website/read.php')
+	// 		.then(res => setSites(res.data.sites))
+	// 		.finally(() => setLoading(false))
+	// }, []);
 
 	// Set nonStarredSites array
 	let nonStarredSites = [];
 	// Function to fill non-starred sites into the nonStarredSites array
 	const nonStarredSitesFill = () => {
-		sites.map((siteDetail) => {
-			if (siteDetail.starred !== true && siteDetail.screenshotUrl !== "") {
+		sitesData.data.map((siteDetail) => {
+			if (siteDetail.starred !== 1 && siteDetail.screenshotUrl !== null) {
 				return nonStarredSites.push(siteDetail)
 			}
-			return null;
+			return nonStarredSites;
 		})
 	}
 	// Execute the nonStarredSites function
@@ -94,13 +93,13 @@ const Site = () => {
 	return (
 		<div className="nonStarredSitesSectionContainer">
 
-			{loading ? <img src={loadingSpinner} alt="Page loading spinner" /> : nonStarredSites.map((siteDetail, index) => {
+			{nonStarredSites.map((siteDetail, index) => {
 
 				return (<div className="nonStarredSiteItem" id={siteDetail.id} key={index}>
 					{((index + 1) / screenWidth) % 1 === 0 ?
 						<div className="lastColumn">
 							<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
-							<div className="onHoverInfo">
+							{/* <div className="onHoverInfo">
 								<h3 className="slideOutTitle">{siteDetail.name}</h3>
 								<div className="nonStarredFeatures">
 									{siteDetail.features !== null &&
@@ -124,12 +123,12 @@ const Site = () => {
 									}
 								</div>
 
-							</div>
+							</div> */}
 						</div>
 						:
 						<>
 							<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
-							<div className="onHoverInfo">
+							{/* <div className="onHoverInfo">
 								<h3 className="slideOutTitle">{siteDetail.name}</h3>
 								<div className="nonStarredFeatures">
 									{siteDetail.features !== null &&
@@ -157,7 +156,7 @@ const Site = () => {
 									}
 								</div>
 
-							</div>
+							</div> */}
 
 						</>
 					}

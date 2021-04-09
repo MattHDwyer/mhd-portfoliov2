@@ -22,7 +22,7 @@ function Skills() {
 		{
 			name: "Shopify",
 			icon: <FaShopify />,
-			description: "I'm no stranger to Liquid or the Shopify interface. Everyday I'm involved with helping someone set up their Shopify Admin Panel or making changes to their template to suit their requests."
+			description: `I'm no stranger to Liquid or the Shopify interface. Everyday I'm involved with helping someone set up their Shopify Admin Panel or making changes to their template to suit their requests. To see some examples of my work, head over to my Shopify Portfolio page!`
 		},
 		{
 			name: "Javascript",

@@ -1,0 +1,65 @@
+.contactContainer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 15px 20px 25px 20px;
+}
+
+.contactTextContainer {
+  text-align: center;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.contactEmailContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactEmail {
+  width: 33.333%;
+  height: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.contactMessageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMessage {
+  width: 66.7%;
+  max-width: 100%;
+  max-height: 100vh;
+  height: 10rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 15px;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: rgba(255, 255, 255);
+}
+
+.contactButton {
+  width: 10%;
+  height: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #240046;
+  color: coral;
+}

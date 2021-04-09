@@ -1,0 +1,372 @@
+{
+  "data": [
+    {
+      "id": "2",
+      "name": "Aus Crystals",
+      "url": "https://auscrystals.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/09MHxnh.png",
+      "features": "Aus Crystals features the Empire theme with customisations to their Customer Sign Up form, where customers have to select if they're signing up for a retailer or wholesale account.\r\n\r\n\r\nDeployed: October 2020"
+    },
+    {
+      "id": "5",
+      "name": "Avalon Nursery",
+      "url": "https://avalonnursery.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://i.imgur.com/j5sf757.png",
+      "features": "Avalon Nursery features customisations to the free Venture theme, including the additions of a centered logo option, phone number and address information in the header.\r\n\r\n\r\nDeployed: October 2020"
+    },
+    {
+      "id": "6",
+      "name": "Back O Bourke Collective",
+      "url": "https://backobourkecollective.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/ddH8mJf.png",
+      "features": "Back O Bourke Collective features customisations to the free Brooklyn theme. The main navigation bar I added a home icon to link to the home page. I also added images to overlay the slideshow on the homepage. On the collection pages there was the addition of the Collection image to appear above the description.\r\n\r\n\r\nDeployed: December 2020"
+    },
+    {
+      "id": "7",
+      "name": "Bear Essence",
+      "url": "https://bearessence.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/XDNIFb7.png",
+      "features": "Bear Essence I created a Special's page for, that was used during the last Christmas period. The page included blocks which were made up of a selection of products for a \"12 Days of Christmas\" promotion the retailer ran. I also made some minor changes to the widths the images on collections displayed.\r\n\r\n\r\nDeployed: July 2020"
+    },
+    {
+      "id": "8",
+      "name": "Brenita",
+      "url": "https://brenita.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/8rOTJFk.png",
+      "features": "Brenita was created for a newsXpress store in Sunbury Square. It's a basic shopify store that's using the Debut theme.\r\n\r\nDeployed: November 2020\r\n"
+    },
+    {
+      "id": "9",
+      "name": "Brindabella Stockfeed",
+      "url": "https://brindabellastockfeed.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/1tGRsnY.png",
+      "features": "Brindabella Stockfeed features changes to the free theme Brooklyn. These changes include customisation to the header, which included the addition of a phone number and search bar. I also made additions to footer to include a google map embed of their store location and a 'Contact Us' form at their request. I also helped them integrate a third party shipping application.\r\n\r\n\r\nDeployed: June 2020\r\n"
+    },
+    {
+      "id": "10",
+      "name": "Brisbane Gifts",
+      "url": "https://brisbanegifts.com",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/nusP0G6.png",
+      "features": null
+    },
+    {
+      "id": "11",
+      "name": "By the Sea Handbags, Luggage & Gifts",
+      "url": "https://bytheseahandbagsluggageandgifts.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/tpjLRIK.png",
+      "features": "By the Sea Handbags, Luggage and Gifts had some minor styling customisations made to the free Debut theme to change the colour combinations across the site (specifically in the header).\r\n\r\n\r\nDeployed: October 2020"
+    },
+    {
+      "id": "12",
+      "name": "Capital Blue",
+      "url": "https://shopcapitalblue.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/kWyQXQO.png",
+      "features": null
+    },
+    {
+      "id": "13",
+      "name": "Chit Chat Gifts",
+      "url": "https://chitchatgifts.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/SxY6K31.png",
+      "features": null
+    },
+    {
+      "id": "14",
+      "name": "Eidsvold Rural",
+      "url": "https://www.eidsvoldrural.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/ToFSml7.png",
+      "features": "Eidsvold Rural features customisation to the free Venture theme on the product pages, where I've added to buttons that link to the Sizing Charts and Refund Policy pages. <br>\r\nI also used Scripts to help the store owners sort the products on their site into collections. These scripts were written in PHP.\r\n\r\n\r\nDeployed: November 2020"
+    },
+    {
+      "id": "15",
+      "name": "Forever Gifts and More",
+      "url": "https://forevergiftsandmore.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "16",
+      "name": "Funporium",
+      "url": "https://funporium.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/YEkn7kX.png",
+      "features": null
+    },
+    {
+      "id": "17",
+      "name": "Fyshwick Newsagency",
+      "url": "https://fyshwicknewsagency.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/6sR1C9x.png",
+      "features": null
+    },
+    {
+      "id": "18",
+      "name": "Goulburn Stationery",
+      "url": "https://goulburnstationery.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/GDj1Gg3.png",
+      "features": null
+    },
+    {
+      "id": "19",
+      "name": "H. Rehfisch & Co",
+      "url": "https://rehfisch.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/VDkRGSS.png",
+      "features": "H. Rehfisch & Co includes a navigation feature that will automatically generate the tags for a collection in the navbar dropdown. The site also has custom Product pages for items such as Knives and Firearms, that include Enquiry Forms rather than the option to add the items to the cart. This site was built on the Empire theme.\r\n\r\n\r\nDeployed: December 2020"
+    },
+    {
+      "id": "20",
+      "name": "Heavens Above",
+      "url": "https://heavensabove.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/TS4QVPQ.png",
+      "features": null
+    },
+    {
+      "id": "21",
+      "name": "Hey Belle",
+      "url": "https://heybelle.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "22",
+      "name": "I Know I Want That",
+      "url": "https://www.iknowiwantthat.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/Ojr7b7I.png",
+      "features": null
+    },
+    {
+      "id": "23",
+      "name": "Inspire Yourself & Your Home",
+      "url": "https://inspiretasmania.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/kdB2IBJ.png",
+      "features": "Inspire Yourself & Your Home is one of my favourite sites that I've developed in my time at Tower. The imagery and passion shown by the clients was inspiring and it's produced for them a beautiful site. \r\n\r\nCustomisations that I've made to the Brooklyn theme include, changes to the navigation bar, including the position of the Logo, how the dropdowns look and the container width the navbar was positioned in.\r\n\r\n\r\nDeployed: June 2020"
+    },
+    {
+      "id": "25",
+      "name": "Loaves & Fishes",
+      "url": "https://loavesrobe.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/xTGRRAJ.png",
+      "features": "Loaves & Fishes Robe, SA is one of my favourite sites, because of the theme selection and the imagery chosen by the client. Customisations to the Icon theme include the addition of a Visit Us section in the footer. I also wrote a PHP script that went through all the products on the site and tagged them with their brand, if the brand name was in the title.\r\n\r\n\r\nDeployed: September 2020"
+    },
+    {
+      "id": "26",
+      "name": "Master Jewellers",
+      "url": "https://masterjewellersonline.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/V4D19qC.png",
+      "features": "Master Jewellers Online is a beautiful store jewellery store built on the Blockshop theme. Features of this site include a enquiry form and sizing chart links on all of the product pages.\r\n\r\n\r\nDeployed: September 2020"
+    },
+    {
+      "id": "27",
+      "name": "Merimbula Extra",
+      "url": "https://merimbulaextra.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/ipoNCNu.png",
+      "features": null
+    },
+    {
+      "id": "28",
+      "name": "Morgan Park Garden Centre",
+      "url": "https://morganpark.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/dTKVL4t.png",
+      "features": "Morgan Park Garden centre is a simple and elegant nursery store, that's built off of the back of the Canopy theme. Customisations to the site include custom pages to display all the collections that make up a section of the store. Plants, Pots & Gift ideas and Garden Essentials each have their own custom page and section, which shows off the collections. The newsletter sign up form also includes first & last names.\r\n\r\n\r\nDeployed: August 2020"
+    },
+    {
+      "id": "29",
+      "name": "Nextra Gifts Orange",
+      "url": "https://www.nextragiftsorange.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "30",
+      "name": "Northside Produce Agency",
+      "url": "https://northsideproduceagency.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/loZxjdM.png",
+      "features": "Northside Produce Agency was developed on the Venue theme. This site includes custom pages for the Town, Country and Animals landing pages. They include descriptions of what products they sell, as well as links to the collections at the bottom of that page. <br>\r\nWork was also done on the collection pages, to make all the images appear more uniformed. <br>\r\nThe site also includes a function that will automatically generate the tags for a collection that's linked in the navigation bar.\r\n\r\n\r\nDeployed: October 2020"
+    },
+    {
+      "id": "31",
+      "name": "Offline Ulladulla",
+      "url": "https://offline-ulladulla.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/UcyyDNw.png",
+      "features": null
+    },
+    {
+      "id": "32",
+      "name": "One Baby",
+      "url": "https://onebaby.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/iVIguRu.png",
+      "features": null
+    },
+    {
+      "id": "33",
+      "name": "Pampered Petz Hornsby",
+      "url": "https://pamperedpetz.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "34",
+      "name": "Paper Play",
+      "url": "https://www.paperplayonline.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": "Paper Play is built on the Debut theme for newsXpress Inverloch. The site has a custom page dedicated to LEGO®. The LEGO® was designed by me to and has been granted the Gold Standard for LEGO® sites in Australia. The LEGO® page includes a custom: slideshow, buttons with links to categories of LEGO®, Shop by Themes and a Shop by Theme section.\r\n\r\n\r\nDeployed: June 2020"
+    },
+    {
+      "id": "35",
+      "name": "Parkes News & Gifts",
+      "url": "https://parkesnewsandgifts.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "36",
+      "name": "Peppercorn Gifts & Homewares",
+      "url": "https://peppercorngifts.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/DQcnlge.png",
+      "features": "Peppercorn Gifts & Homewares includes customistaions on the ShowTime theme. These include an option to add products extra products to the customers cart in the cart modal. <br>\r\nThis site includes the automatically generating tags in the navigation menu. This means that if a Collection is linked in the navbar, the tags for that collection will appear in the dropdown menu.\r\n\r\n\r\nDeployed: November 2020"
+    },
+    {
+      "id": "37",
+      "name": "Price Produce",
+      "url": "https://priceproduce.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "38",
+      "name": "River City Pets",
+      "url": "https://rivercitypets.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/elHzcNM.png",
+      "features": null
+    },
+    {
+      "id": "39",
+      "name": "Smith Street Traders",
+      "url": "https://smithstreettraders.com.au",
+      "starred": "0",
+      "screenshotUrl": null,
+      "features": null
+    },
+    {
+      "id": "40",
+      "name": "Sprengers Rural Traders",
+      "url": "https://sprengersruraltraders.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/IYxyVie.png",
+      "features": "Sprengers Rural is a gorgeous country boutique store, developed on the back of the Impulse theme. Customisations to theme include the additional menu in the header. <br>\r\nThe Country Boutique and Pet & Rural are both custom pages that display the collections that make up those sections of the site. <br>\r\nThis site includes the automatically generating tags in the navigation menu. This means that if a Collection is linked in the navbar, the tags for that collection will appear in the dropdown menu.\r\n\r\n\r\nDeployed: September 2020"
+    },
+    {
+      "id": "41",
+      "name": "The Feed Shop",
+      "url": "https://thefeedshop.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/WyCIruD.png",
+      "features": "The Feed Shop is a custom site built off of the Venture Theme. It includes customisations to the header of the site, including a custom notice for customers. It also includes a custom \"Hire Services\" page. This page includes blocks, that include an image and some text. Along with the option to link it to a product page. <br>\r\nCustomisations were also made to the navbar so that it didn't collapse into a hamburger menu when it got too wide.\r\n\r\n\r\nDeployed: May 2020"
+    },
+    {
+      "id": "42",
+      "name": "The University of Newcastle - The Shop",
+      "url": "https://shop.newcastle.edu.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/VxHJPSs.png",
+      "features": "This site for The University of Newcastle The Shop was developed on the Testament theme. This site includes customisations on the home page to the YouTube embed , an added announcement bar (that automatically rotates and includes Icons that can be included with each annoncement text) and the links to collections.\r\n\r\n\r\nDeployed: September 2020"
+    },
+    {
+      "id": "43",
+      "name": "Toyworld - Canberra",
+      "url": "https://toyworldcanberra.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/pYJ8FHV.png",
+      "features": "Toyworld Canberra is a fantastic site designed to integrate the store's Toyworld, Radio Control World and Hobby World into an online store. The store includes a LEGO® section, which has been graded by LEGO® as their Gold Standard for websites in Australia. The LEGO® page includes a custom: slideshow, buttons with links to categories of LEGO®, Shop by Themes and a Shop by Theme section.\r\n\r\n\r\nDeployed: June 2020"
+    },
+    {
+      "id": "44",
+      "name": "Toyworld - Wauchope",
+      "url": "https://toyworldwauchope.com.au",
+      "starred": "1",
+      "screenshotUrl": "https://imgur.com/WPk3WT0.png",
+      "features": "Toyworld Wauchope is large catalogue webstore. Featuring the automatically generating tags, that when a collection is linked in the navigation, the dropdown menu will automatically generate the tags in that collection. The store also includes a LEGO® section, which has been graded by LEGO® as their Gold Standard for websites in Australia. The LEGO® page includes a custom: slideshow, buttons with links to categories of LEGO®, Shop by Themes and a Shop by Theme section.\r\n\r\n\r\nDeployed: November 2020"
+    },
+    {
+      "id": "45",
+      "name": "Treasure Box Gifts",
+      "url": "https://treasureboxgifts.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/8oi7zSg.png",
+      "features": null
+    },
+    {
+      "id": "46",
+      "name": "Warragul Pet Emporium",
+      "url": "https://warragulpetemporium.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/EP3gQQi.png",
+      "features": null
+    },
+    {
+      "id": "47",
+      "name": "Welby Garden Centre",
+      "url": "https://welbygardencentre.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/rMW6khy.png",
+      "features": null
+    },
+    {
+      "id": "48",
+      "name": "Wollongong Bike Hub",
+      "url": "https://wollongongbikehub.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/zGSSlsR.png",
+      "features": "Wollongong Bike is developed on the back off the District theme and features a custom brands page, that displays all the Brands sold on the store. It also includes a custom notice for products that are apart of the Bikes collection. Additionally in the footer I've added a section for extra information for their two stores.\r\n\r\n\r\nDeployed: June 2020"
+    },
+    {
+      "id": "49",
+      "name": "Yan Yean Stockfeeds ",
+      "url": "https://yysf.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/8MwOrEM.png",
+      "features": null
+    },
+    {
+      "id": "50",
+      "name": "Unlce Toms Pet and Poultry Supplies",
+      "url": "https://uncletomspps.com.au",
+      "starred": "0",
+      "screenshotUrl": "https://imgur.com/a4h6L8v.png",
+      "features": null
+    }
+  ]
+}

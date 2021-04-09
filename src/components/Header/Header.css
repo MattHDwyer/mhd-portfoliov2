@@ -128,6 +128,10 @@
   color: coral;
 }
 
+.navLink:hover > .iconLinkedIn {
+  color: #0077b5;
+}
+
 .navLinkLogo {
   font-weight: bold;
   text-transform: uppercase;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { FaShopify, FaBrain, FaBookReader, FaEnvelope, FaHome } from "react-icons/fa";
+import { FaShopify, FaBrain, FaBookReader, FaEnvelope, FaHome, FaLinkedin } from "react-icons/fa";
 import { GoGear } from 'react-icons/go';
 import { IconContext } from "react-icons";
 
@@ -14,7 +14,7 @@ const Header = () => {
 			<nav className="navContainer">
 				<ul className="navbar">
 					<li className="navItem">
-						<a className="navLinkLogo" href="#top">
+						<a className="navLinkLogo" href="/">
 							<span className="logoText">Matt Dwyer<br />  <small>Web Developer</small></span>
 							<svg
 								aria-hidden="true"
@@ -75,10 +75,10 @@ const Header = () => {
 							</a>
 						</li>
 					</IconContext.Provider>
-					<IconContext.Provider value={{ className: "navIcon iconHome" }}>
+					<IconContext.Provider value={{ className: "navIcon iconLinkedIn" }}>
 						<li className="navItem">
-							<a className={path === "/" ? "navLinkActive" : "navLink"} href="/">
-								<FaHome /><span className="linkText">Home</span>
+							<a className={path === "/" ? "navLinkActive" : "navLink"} href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" target="_blank">
+								<FaLinkedin /><span className="linkText">LinkedIn</span>
 							</a>
 						</li>
 					</IconContext.Provider>

@@ -1,6 +1,7 @@
 .modalDescriptionText {
   color: black;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .skillsContainer {
@@ -11,6 +12,7 @@
   text-align: center;
   margin-bottom: 35px;
 }
+
 .skillButton {
   display: flex;
   flex-direction: column;
@@ -18,6 +20,14 @@
   align-items: center;
   margin: auto;
   background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: background-color ease 600ms;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.skillButton:hover {
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 .skillContainer {
@@ -34,6 +44,13 @@
   align-items: center;
   margin: auto;
   font-size: 5rem;
+  padding-bottom: 15px;
+  transition: font-size 600ms ease;
+}
+
+.skillButton:hover .skillIcon {
+  display: block;
+  font-size: 6rem;
 }
 
 .skillHTML5 {
@@ -88,8 +105,12 @@
   color: #4db33d;
 }
 
-.skillButton:hover {
-  background-color: rgb(255, 255, 255);
+.ReactModal__Content {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
@@ -116,7 +137,8 @@
   .skillsGridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 35px;
+    row-gap: 15px;
+    column-gap: 15px;
   }
   .skillButton {
     min-width: 300px;

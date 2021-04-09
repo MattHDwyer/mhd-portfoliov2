@@ -1,5 +1,8 @@
 .aboutContainer {
   margin-bottom: 75px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px 25px 20px;
+  border-radius: 25px;
 }
 
 .aboutTextLeft {
@@ -17,4 +20,32 @@
   margin-top: 75px;
   line-height: 22px;
   content: "";
+}
+
+.aboutLinkButton {
+  height: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #240046;
+  color: coral;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.aboutLinkButton:hover {
+  background-color: #2c0e49;
+}
+
+.aboutParagraphContainer {
+  width: 100%;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
