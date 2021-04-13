@@ -26,7 +26,6 @@ const About = () => {
 							<li className="aboutListItem">LiftM8?</li>
 							<li className="aboutListItem">Esports Job Finder</li>
 						</ol>
-						<p>As I start these projects, I'll post more information about them over on my <a href="/projects">projects page!</a></p>
 						<br className="aboutSeperator" />
 						<p>
 							If you've got any questions about my work or skills feel free to <a href="/contact">contact me</a> or check out my <a href="/skills">skills page.</a>
