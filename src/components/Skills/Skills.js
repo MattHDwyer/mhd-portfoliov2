@@ -27,7 +27,7 @@ function Skills() {
 		{
 			name: "Javascript",
 			icon: <FaJsSquare />,
-			description: "While I don't code in JS as much as I do HTML, CSS or Liquid I still have a solid knowledge base and enjoy learning more and more about the best ways to enhance a website with JS."
+			description: "Javascript is one of the core languages to any web development project. I have a core understanding to the basic's and of course I'm continually learning new techniques everyday."
 		},
 		{
 			name: "React",
