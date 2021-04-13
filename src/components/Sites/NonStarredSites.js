@@ -85,7 +85,9 @@ const Site = () => {
 			{nonStarredSites.map((siteDetail, index) => {
 				return (
 					<div className="nonStarredSiteItem" id={siteDetail.id} key={index}>
-						<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
+						<a href={siteDetail.url} rel="noreferrer" target="_blank">
+							<img className="nonStarredScreenshot" src={siteDetail.screenshotUrl} alt={siteDetail.name} />
+						</a>
 					</div>
 				)
 			})}

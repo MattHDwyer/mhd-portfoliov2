@@ -8,6 +8,10 @@
   margin-bottom: 75px;
 }
 
+.skillsGridContainer {
+  max-width: 80vw;
+}
+
 .skillsDescription {
   text-align: center;
   margin-bottom: 35px;
@@ -119,6 +123,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  z-index: 100000;
+  max-width: 60vw;
+}
+
+.modalContainer {
 }
 
 @media only screen and (max-width: 600px) {
@@ -137,14 +147,19 @@
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .skillsGridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+  .skillButton {
+    min-width: 200px;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .skillsGridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 15px;
     column-gap: 15px;
   }
