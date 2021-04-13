@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaHtml5, FaCss3Alt, FaSass, FaShopify, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaGit } from "react-icons/fa";
 import { DiPhotoshop, DiMysql, DiMongodb } from "react-icons/di";
-import { GiTalk } from "react-icons/gi";
+import { GiTalk, GiMagnifyingGlass } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import Modal from 'react-modal';
 import './Skills.css';
@@ -33,6 +33,11 @@ function Skills() {
 			name: "React",
 			icon: <FaReact />,
 			description: "I have a stable understanding of React and have coded a few projects (including this portfolio site), which you can see on my Portfolio page."
+		},
+		{
+			name: "SEO",
+			icon: <GiMagnifyingGlass />,
+			description: "I have a solid basic understanding of SEO best practises and steps that can be taken to boost a website's SEO ranking."
 		},
 		{
 			name: "PHP",
@@ -112,7 +117,7 @@ function Skills() {
 				>
 					<h3>{currentSkill.name}</h3>
 					<p className="modalDescriptionText"> {currentSkill.description}</p>
-					<IconContext.Provider value={{ className: `skillIcon skill${currentSkill.name.replace(/\s/g, '')}` }}>
+					<IconContext.Provider value={{ className: `skillIcon skill${currentSkill.name.replace(/\s/g, '')} active` }}>
 						{currentSkill.icon}
 					</IconContext.Provider>
 				</Modal>

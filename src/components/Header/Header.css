@@ -132,6 +132,10 @@
   color: #0077b5;
 }
 
+.navLink:hover > .iconGitHub {
+  color: white;
+}
+
 .navLinkLogo {
   font-weight: bold;
   text-transform: uppercase;

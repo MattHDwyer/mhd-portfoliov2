@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { FaShopify, FaBrain, FaBookReader, FaEnvelope, /*FaHome,*/ FaLinkedin } from "react-icons/fa";
+import { FaShopify, FaBrain, FaBookReader, FaEnvelope, /*FaHome,*/ FaGithub } from "react-icons/fa";
 import { GoGear } from 'react-icons/go';
 import { IconContext } from "react-icons";
 
@@ -75,10 +75,10 @@ const Header = () => {
 							</a>
 						</li>
 					</IconContext.Provider>
-					<IconContext.Provider value={{ className: "navIcon iconLinkedIn" }}>
+					<IconContext.Provider value={{ className: "navIcon iconGitHub" }}>
 						<li className="navItem">
-							<a className="navLink" href="https://www.linkedin.com/in/matthew-dwyer-2ba778187/" rel="noreferrer" target="_blank">
-								<FaLinkedin /><span className="linkText">LinkedIn</span>
+							<a className="navLink" href="https://github.com/MattHDwyer" rel="noreferrer" target="_blank">
+								<FaGithub /><span className="linkText">GitHub</span>
 							</a>
 						</li>
 					</IconContext.Provider>

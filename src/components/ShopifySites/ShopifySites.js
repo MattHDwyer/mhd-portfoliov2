@@ -9,7 +9,7 @@ const ShopifySites = () => {
 		<>
 			<h1>Shopify Sites with Tower Systems</h1>
 			<div class="shopifySitesContainer">
-				<p>Below is a collection of all the Shopify sites that I've deployed with Tower Systems for my clients.</p>
+				<p>Below is a collection of majority the Shopify sites that I've deployed with Tower Systems for my clients.</p>
 			</div>
 			<StarredSites />
 			<NonStarredSites />

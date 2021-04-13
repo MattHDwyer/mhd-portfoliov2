@@ -24,8 +24,25 @@
   align-items: center;
 }
 
+@media screen and (min-width: 600px) {
+  .contactEmail {
+    width: 33.3%;
+  }
+  .contactMessage {
+    width: 66.7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactEmail {
+    width: 100%;
+  }
+  .contactMessage {
+    width: 100%;
+  }
+}
+
 .contactEmail {
-  width: 33.333%;
   height: 1rem;
   border-radius: 0.3rem;
   border: none;
@@ -42,8 +59,7 @@
 }
 
 .contactMessage {
-  width: 66.7%;
-  max-width: 100%;
+  max-width: 66vw;
   max-height: 100vh;
   height: 10rem;
   border-radius: 1rem;
@@ -62,4 +78,24 @@
   color: coral;
   width: fit-content;
   padding: 0.5rem 2rem;
+}
+
+.contactIcon {
+  height: 5rem;
+  width: 5rem;
+  margin: 25px 15px;
+  transform: scale(0.9);
+  transition: ease 600ms;
+}
+
+.iconLinkedIn {
+  color: #0077b5;
+}
+
+.iconGitHub {
+  color: white;
+}
+
+.contactIcon:hover {
+  transform: scale(1);
 }
