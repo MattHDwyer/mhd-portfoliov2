@@ -14,7 +14,6 @@ body {
   padding: 0;
   background: rgb(194, 223, 227);
   font-family: "Hind Siliguri", sans-serif;
-  margin-left: 7rem;
 }
 
 a {
@@ -90,5 +89,8 @@ p {
 @media only screen and (min-width: 600px) {
   main {
     margin: 0 auto;
+  }
+  body {
+    margin-left: 7rem;
   }
 }
