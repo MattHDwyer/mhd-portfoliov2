@@ -114,6 +114,7 @@ function Skills() {
 				<Modal
 					isOpen={modalIsOpen}
 					onRequestClose={closeModal}
+					className="modalContainer"
 				>
 					<h3>{currentSkill.name}</h3>
 					<p className="modalDescriptionText"> {currentSkill.description}</p>

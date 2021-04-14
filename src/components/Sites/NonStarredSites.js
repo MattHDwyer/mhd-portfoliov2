@@ -22,7 +22,7 @@ const Site = () => {
 	// Function to fill non-starred sites into the nonStarredSites array
 	const nonStarredSitesFill = () => {
 		sitesData.data.map((siteDetail) => {
-			if (siteDetail.starred !== 1 && siteDetail.screenshotUrl !== null) {
+			if (siteDetail.starred === "0" && siteDetail.screenshotUrl !== null || siteDetail.starred === "1" && siteDetail.screenshotUrl !== null) {
 				return nonStarredSites.push(siteDetail)
 			}
 			return nonStarredSites;
