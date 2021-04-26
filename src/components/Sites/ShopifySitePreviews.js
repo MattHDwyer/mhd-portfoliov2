@@ -1,6 +1,5 @@
-import React/*, { useLayoutEffect, useState }*/ from 'react';
-import './NonStarredSites.css'
-// import Modal from 'react-modal';
+import React from 'react';
+import './ShopifySitePreviews.css'
 import sitesData from '../../data/shopifySites.json';
 
 const Site = () => {

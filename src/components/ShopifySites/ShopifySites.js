@@ -1,6 +1,5 @@
-import React/*, { useState, useEffect } */ from 'react';
-import StarredSites from '../StarredSites/StarredSites';
-import NonStarredSites from '../Sites/NonStarredSites';
+import React from 'react';
+import ShopifySitePreviews from '../Sites/ShopifySitePreviews';
 import './ShopifySites.css'
 
 const ShopifySites = () => {
@@ -11,8 +10,7 @@ const ShopifySites = () => {
 			<div class="shopifySitesContainer">
 				<p>Below is a collection of majority the Shopify sites that I've deployed with Tower Systems for my clients. Majority of my work is done with independant small business retailers, however, I've also work with The University of Newcastle and a couple of Toyworld Franchises.</p>
 			</div>
-			<StarredSites />
-			<NonStarredSites />
+			<ShopifySitePreviews />
 		</>
 	)
 }
